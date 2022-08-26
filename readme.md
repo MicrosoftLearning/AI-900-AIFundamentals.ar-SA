@@ -1,18 +1,16 @@
 ---
-ms.openlocfilehash: 5e30b50971446e2da8383a94557380ede431b7c9
-ms.sourcegitcommit: a01e0cfb657c6628e71e3e2d981b6f19bde0ed89
+ms.openlocfilehash: 4e00e832d02871de3fa4511273434b6e8db58df3
+ms.sourcegitcommit: 71edd7d093464547be5a87725ef67dad082aafbf
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "138099849"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "147629844"
 ---
-# <a name="microsoft-azure-ai-fundamentals-exercises"></a>تمارين أساسيات الذكاء الاصطناعي Microsoft Azure
+# <a name="ai-900-microsoft-azure-ai-fundamentals"></a>AI-900: أساسيات الذكاء الاصطناعي لـ Microsoft Azure
 
-يحتوي هذا المستودع على تمارين معملية عملية لدورة Microsoft التدريبية [AI-900 *أساسيات Microsoft Azure AI*](https://docs.microsoft.com/en-us/learn/certifications/courses/ai-900t00) و[الوحدات النمطية الذاتية في Microsoft Learn](https://docs.microsoft.com/learn/certifications/azure-ai-fundamentals). صُممت الأنشطة المعملية لمرافقة المواد التعليمية وتمكينك من التدرب على استخدام التقنيات التي يصفونها. 
+يحتوي هذا المستودع على تمارين معملية عملية لدورة Microsoft التدريبية [AI-900 *أساسيات Microsoft Azure AI*](https://docs.microsoft.com/en-us/learn/certifications/courses/ai-900t00) و [الوحدات النمطية الذاتية في Microsoft Learn](https://docs.microsoft.com/learn/certifications/azure-ai-fundamentals). صُممت الأنشطة المعملية لمرافقة المواد التعليمية وتمكينك من التدرب على استخدام التقنيات التي يصفونها. 
 
-- **[تنزيل أحدث دليل للطالب ومحتوى جميع الملفات](../../releases/latest)**
 - **هل أنت مدرب MCT؟** - ألق نظرة على [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
-- **تحتاج إلى بناء تعليمات النشاط المعملي يدويًا؟** - تتوفر التعليمات في مستودع [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build)
 
 ## <a name="what-are-we-doing"></a>ماذا نفعل؟
 
@@ -34,12 +32,6 @@ ms.locfileid: "138099849"
 
 ## <a name="how-do-i-contribute"></a>كيف أساهم؟
 
-- يمكن لأي MCT إرسال طلب سحب إلى الكود أو المحتوى في GitHub repo، وسيقوم Microsoft ومؤلف الدورة التدريبية بالفرز وتضمين تغييرات المحتوى ورمز النشاط المعملي حسب الحاجة.
+- يمكن لأي MCT إرسال طلب سحب كود أو محتوى في مستودع GitHub، وستقوم Microsoft ومؤلف الدورة التدريبية بالفرز وتضمين تغييرات المحتوى ورمز النشاط المعملي حسب الحاجة.
 
-- إذا كانت لديك اقتراحات أو وجدت أي أخطاء، فيرجى [الإبلاغ عنها](https://docs.microsoft.com/learn/support/troubleshooting#report-feedback).
-
-## <a name="notes"></a>ملاحظات 
-
-### <a name="classroom-materials"></a>مواد الفصل
-
-يوصى بشدة أن يقوم MCTs والشركاء بالوصول إلى هذه المواد، وبالتالي توفيرها بشكل منفصل للطلاب.  إن توجيه الطلاب مباشرةً إلى GitHub للوصول إلى خطوات النشاط المعملي كجزء من عملهم في جلسة تدريبية سيتطلب منهم الوصول إلى واجهة مستخدم أخرى كجزء من الدورة التدريبية، مما يساهم في تقديم تجربة مربكة للطالب. إن شرح سبب تلقي الطالب تعليمات للأنشطة المعملية منفصلة يمكن أن يبرز طبيعة واجهة ونظام أساسي قائم على السحابة متغير دائمًا. يقتصر دعم Microsoft Learning للوصول إلى الملفات على GitHub ودعم التنقل في موقع GitHub على MCTs الذين يدرسون هذه الدورة التدريبية فقط.
+- يمكنك إرسال الأخطاء والتغييرات والتحسينات والأفكار.  هل تبحث عن ميزة Azure جديدة قبل أن تكون لدينا؟  تقديم عرض جديد!
