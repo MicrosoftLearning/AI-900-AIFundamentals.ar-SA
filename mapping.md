@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 69f8fd8920fccc0aecc4fb5d5a40e506935f8340
+ms.sourcegitcommit: 276908bd75615fb4d4712b912426129587e9c307
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "140788215"
+---
 # <a name="ai-900-trainer-lab-mapping"></a>تعيين نشاط معملي للمتدرب على الذكاء الاصطناعي-900
 
 هذه الدورة التدريبية، الذكاء الاصطناعي-900: أساسيات الذكاء الاصطناعي، لديها مجموعة فرعية من الأنشطة المعملية المخصصة للتدريب بقيادة مدرب وتم تكييفها لتلائم دورة تدريبية مدتها يوم واحد.
