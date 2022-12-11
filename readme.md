@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 4e00e832d02871de3fa4511273434b6e8db58df3
-ms.sourcegitcommit: 71edd7d093464547be5a87725ef67dad082aafbf
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "147629844"
----
 # <a name="ai-900-microsoft-azure-ai-fundamentals"></a>AI-900: أساسيات الذكاء الاصطناعي لـ Microsoft Azure
 
-يحتوي هذا المستودع على تمارين معملية عملية لدورة Microsoft التدريبية [AI-900 *أساسيات Microsoft Azure AI*](https://docs.microsoft.com/en-us/learn/certifications/courses/ai-900t00) و [الوحدات النمطية الذاتية في Microsoft Learn](https://docs.microsoft.com/learn/certifications/azure-ai-fundamentals). صُممت الأنشطة المعملية لمرافقة المواد التعليمية وتمكينك من التدرب على استخدام التقنيات التي يصفونها. 
+يحتوي هذا المستودع على تمارين معملية عملية لدورة Microsoft التدريبية [AI-900 *أساسيات Microsoft Azure AI*](https://docs.microsoft.com/en-us/learn/certifications/courses/ai-900t00) و[الوحدات النمطية الذاتية في Microsoft Learn](https://docs.microsoft.com/learn/certifications/azure-ai-fundamentals). صُممت الأنشطة المعملية لمرافقة المواد التعليمية وتمكينك من التدرب على استخدام التقنيات التي يصفونها. 
 
 - **هل أنت مدرب MCT؟** - ألق نظرة على [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
 
