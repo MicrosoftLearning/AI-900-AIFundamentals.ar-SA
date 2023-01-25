@@ -126,9 +126,11 @@ lab:
 
     ![لقطة شاشة لموقع مكتبة أصول المصمم وشريط البحث وأيقونة المكونات.](media/create-classification-model/designer-asset-library-components.png)
 
-1. اسحب الوحدة **Normalize Data** إلى اللوحة، أسفل مجموعة البيانات **diabetes-data**. ثم قم بتوصيل الإخراج من الجزء السفلي لمجموعة **diabetes-data** بالإدخال الموجود في الجزء العلوي من وحدة **Normalize Data**، مثل ما يلي:
+1. ابحث عن الوحدة **Select Columns in Dataset** وضعها على اللوحة، أسفل مجموعة البيانات **diabetes-data**. ثم قم بتوصيل الإخراج من الجزء السفلي لمجموعة بيانات **diabetes-data** بالإدخال الموجود في الجزء العلوي من وحدة **Select Columns in Dataset**.
 
-    ![لقطة شاشة لبنية أساسية لبرنامج ربط العمليات التجارية ذات مجموعة بيانات متصلة بوحدة Normalize Data.](media/create-classification-model/dataset-normalize.png)
+1. ابحث عن الوحدة **Normalize Data** وضعها على اللوحة، أسفل الوحدة **Select Columns in Dataset**. ثم قم بتوصيل الإخراج من الجزء السفلي لوحدة **Select Columns in Dataset** بالإدخال الموجود في الجزء العلوي من وحدة **Normalize Data**، مثل ما يلي:
+
+    ![لقطة شاشة لمسار ذا مجموعة بيانات متصلة لتحديد الأعمدة ووحدة Normalize Data.](media/create-classification-model/dataset-normalize.png)
 
 1. انقر نقرًا مزدوجًا فوق وحدة **Normalize Data** لعرض إعداداتها، مع ملاحظة أنها تتطلب منك تحديد طريقة التحويل والأعمدة المراد تحويلها. 
 
@@ -277,6 +279,7 @@ lab:
     
     - أضف مكون **web service input** للبيانات الجديدة التي سيتم إرسالها.
     - استبدل مجموعة البيانات **diabetes-data** لتحل محلها وحدة **Enter Data Manually** والتي لا تتضمن عمود label (**Diabetic**).
+    - حرر الأعمدة المحددة في الوحدة **Select Columns in Dataset**.
     - قم بإزالة الوحدة **Evaluate Model**.
     - قم بإدراج الوحدة **Execute Python Script** قبل إخراج خدمة الويب لإرجاع معرف المريض وقيمة label المتوقعة والاحتمالية.
 
@@ -293,6 +296,8 @@ lab:
 
 1. قم بتوصيل الوحدة الجديدة **Enter Data Manually** بنفس إدخال **Dataset** من الوحدة **Apply Transformation** على أنه **Web Service Input**.
 
+1. حدد الوحدة **Select Columns in Dataset**. أزل **Diabetic** من *Selected Columns*. 
+
 1. تتضمن البنية الأساسية للاستدلال الوحدة **Evaluate Model**، والتي تعد غير مفيدة عند إجراء التنبؤ باستخدام البيانات الجديدة، لذا احذف هذه الوحدة.
 
 1. يتضمن الإخراج من الوحدة **Score Model** جميع ميزات الإدخال بالإضافة إلى التسمية المتوقعة ودرجة الاحتمالية. لتحديد الإخراج إلى التنبؤ والاحتمالية فقط:
@@ -304,7 +309,7 @@ import pandas as pd
 
 def azureml_main(dataframe1 = None, dataframe2 = None):
 
-    scored_results = dataframe1[['PatientID', 'Scored Labels', 'Scored Probabilities']]
+    scored_results = dataframe1[['Scored Labels', 'Scored Probabilities']]
     scored_results.rename(columns={'Scored Labels':'DiabetesPrediction',
                                 'Scored Probabilities':'Probability'},
                         inplace=True)
