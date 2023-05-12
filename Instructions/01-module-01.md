@@ -1,7 +1,6 @@
 ---
 lab:
   title: خدمات Azure المعرفية
-  module: Module 1 - Introduction to AI
 ---
 
 # <a name="explore-cognitive-services"></a>خدمات Azure المعرفية
