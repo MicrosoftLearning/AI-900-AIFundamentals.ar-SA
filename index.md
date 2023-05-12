@@ -12,7 +12,7 @@ layout: home
 
 
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/instructions'" %}
-| التمارين |
+| Exercises |
 | ------- | 
 {% for activity in labs  %}| [{{ activity.lab.title }}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
