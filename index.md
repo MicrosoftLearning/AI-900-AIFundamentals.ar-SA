@@ -1,17 +1,18 @@
 ---
-title: Online Hosted Instructions
+title: تعليمات مستضافة عبر الإنترنت
 permalink: index.html
 layout: home
 ---
 
-# Azure AI Fundamentals Exercises
+# <a name="azure-ai-fundamentals-exercises"></a>تمارين أساسيات Azure في الذكاء الاصطناعي
 
-These hands-on exercises are designed to support training content on [Microsoft Learn](https://docs.microsoft.com/training/).
+تم تصميم هذه التدريبات العملية لدعم محتوى التدريب على [Microsoft Learn](https://docs.microsoft.com/training/).
 
-To complete these exercises, you'll need a Microsoft Azure subscription. You can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com).
+لإكمال هذه التمارين، ستحتاج إلى اشتراك Microsoft Azure. يمكنك التسجيل للحصول على نسخة تجريبية مجانية في [https://azure.microsoft.com](https://azure.microsoft.com).
 
+## <a name="labs"></a>Labs
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/instructions'" %}
-| Exercises |
+| التمارين |
 | ------- | 
 {% for activity in labs  %}| [{{ activity.lab.title }}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
