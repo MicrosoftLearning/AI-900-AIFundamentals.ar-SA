@@ -3,7 +3,7 @@ lab:
   title: استكشاف Computer Vision
 ---
 
-# <a name="explore-computer-vision"></a>استكشاف Computer Vision
+# استكشاف Computer Vision
 
 > **ملاحظة** لإكمال هذا النشاط المعملي، ستحتاج إلى [اشتراك Azure](https://azure.microsoft.com/free?azure-portal=true) الذي لديك فيه حق الوصول الإداري.
 
@@ -13,7 +13,7 @@ lab:
 
 في هذا المختبر، ستستخدم تطبيق سطر أوامر بسيط لرؤية خدمة رؤية الكمبيوتر قيد التنفيذ. تنطبق نفس المبادئ والوظائف في حلول العالم الحقيقي، مثل مواقع الويب أو تطبيقات الهاتف.
 
-## <a name="create-a-cognitive-services-resource"></a>إنشاء مورد *الخدمات المعرفية*
+## إنشاء مورد *الخدمات المعرفية*
 
 يمكنك استخدام خدمة "رؤية الكمبيوتر" عن طريق إنشاء مورد **Computer Vision** أو مورد **Cognitive Services**.
 
@@ -33,7 +33,7 @@ lab:
 
 1. عرض صفحة **Keys and Endpoint** لمورد الخدمات المعرفية. ستحتاج نقطة النهاية والمفاتيح للاتصال من تطبيقات العميل.
 
-## <a name="run-cloud-shell"></a>تشغيل Cloud Shell
+## تشغيل Cloud Shell
 
 لاختبار قدرات خدمة «رؤية الكمبيوتر»، سنستخدم تطبيق سطر أوامر بسيط يعمل في Cloud Shell على Azure.
 
@@ -55,7 +55,7 @@ lab:
 
     ![انتظر حتى يبدأ PowerShell.](media/analyze-images-computer-vision-service/powershell-prompt.png)
 
-## <a name="configure-and-run-a-client-application"></a>كوّن تطبيق عميل وقم بتشغيله
+## كوّن تطبيق عميل وقم بتشغيله
 
 الآن بعد أن أصبح لديك بيئة Cloud Shell، يمكنك تشغيل تطبيق بسيط يستخدم خدمة رؤية الكمبيوتر لتحليل صورة.
 
@@ -134,6 +134,6 @@ lab:
 
 1. راجع نتائج تحليل الصورة للصورة الثالثة.
 
-## <a name="learn-more"></a>معرفة المزيد
+## معرفة المزيد
 
-يظهر هذا التطبيق البسيط فقط بعض من قدرات خدمة «رؤية الكمبيوتر». لمعرفة المزيد حول ما يمكنك القيام به مع هذه الخدمة، راجع [صفحة رؤية الكمبيوتر](https://azure.microsoft.com/services/cognitive-services/computer-vision/).
+يظهر هذا التطبيق البسيط فقط بعض من قدرات خدمة «رؤية الكمبيوتر». لمعرفة المزيد حول ما يمكنك القيام به مع هذه الخدمة، راجع [صفحة رؤية الكمبيوتر](https://azure.microsoft.com/products/ai-services?activetab=pivot:visiontab).
