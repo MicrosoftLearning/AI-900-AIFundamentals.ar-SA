@@ -75,9 +75,12 @@ lab:
 
 1. انقر فوق **Review**، ثم انقر فوق **Create**. انتظر حتى يكتمل النشر، ثم انتقل إلى المورد المنشور.
 
+1. في حساب Azure Storage الذي أنشأته، في جزء القائمة الأيسر، حدد **Configuration** (ضمن **Setetings**).
+1. قم بتغيير إعداد *السماح بالوصول المجهول لكائن ثنائي كبير* الحجم إلى **ممكن** ثم حدد **حفظ**.
+
 ## تحميل المستندات إلى Azure Storage
 
-1. في حساب Azure Storage الذي أنشأته، في جزء القائمة الأيسر، حدد **Containers**.
+1. في جزء القائمة الأيمن، حدد **Containers**.
 
     ![لقطة شاشة تعرض صفحة «Storage Blob Overview».](media/create-cognitive-search-solution/storage-blob-1.png)
 
@@ -154,14 +157,12 @@ lab:
     > **ملاحظة** يظهر تحذير يطلب **Storage Account Connection String**.
     >
     > ![لقطة شاشة تعرض تحذير شاشة اتصال حساب Storage مع تحديد "Choose an existing connection".](media/create-cognitive-search-solution/6a-azure-cognitive-search-enrichments-warning.png)
-
+    >
     > 1. حدد رابط **Choose an existing connection**. اختر حساب التخزين الذي أنشأته سابقًا.
-
-    > 1. انقر فوق **+ Container** لإنشاء حاوية جديدة تسمى **knowledge-store** مع privacy level المُعين إلى private، وحدد **Create**.
-
+    > 1. انقر فوق **+ Container** لإنشاء حاوية جديدة تسمى **knowledge-store** مع تعيين مستوى الخصوصية إلى **خاص**، وحدد **Create**.
     > 1. ثم حدد حاوية **knowledge-store** ثم انقر فوق **Select** أسفل الشاشة.
 
-1. حدد **مشاريع Azure blob: مستند**. سيظهر إعداد *Container name* مع حاوية *knowledge-store* التي تمت تعبئتها تلقائياً. لا تقم بتغيير اسم الحاوية.
+1. حدد **Azure blob projections: Document**. سيظهر إعداد *Container name* مع حاوية *knowledge-store* التي تمت تعبئتها تلقائياً. لا تقم بتغيير اسم الحاوية.
 
 1. حدد **Next: Customize target index**. غيّر **Index name** إلى **coffee-index**.
 
