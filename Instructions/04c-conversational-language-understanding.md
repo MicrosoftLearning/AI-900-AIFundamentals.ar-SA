@@ -3,7 +3,7 @@ lab:
   title: استكشاف فهم اللغة
 ---
 
-# <a name="explore-language-understanding"></a>استكشاف فهم اللغة
+# استكشاف فهم اللغة
 
 > **ملاحظة** لإكمال هذا النشاط المعملي، ستحتاج إلى [اشتراك Azure](https://azure.microsoft.com/free?azure-portal=true) الذي لديك فيه حق الوصول الإداري.
 
@@ -11,7 +11,7 @@ lab:
 
 لاختبار إمكانات خدمة Conversational Language Understanding، سنستخدم تطبيق سطر أوامر يعمل في Cloud Shell. تنطبق نفس المبادئ والوظائف في حلول العالم الحقيقي، مثل مواقع الويب أو تطبيقات الهاتف.
 
-## <a name="create-a-language-service-resource"></a>إنشاء مورد *خدمة Language*
+## إنشاء مورد *خدمة Language*
 
 يمكنك استخدام خدمة Conversational Language Understanding عن طريق إنشاء مورد **خدمة Language**.
 
@@ -26,11 +26,11 @@ lab:
     - **المنطقة**: شرق الولايات المتحدة 2
     - **الاسم**: *أدخل اسمًا مميزًا*.
     - **Pricing tier**: S (1000 مكالمة في الدقيقة)
-    - **By checking this box I certify that I have reviewed and acknowledge the terms in the Responsible AI Notice.** : محدد.
+    - **By checking this box I certify that I have reviewed and acknowledge the terms in the Responsible AI Notice.**: محدد.
 
 1. راجع المورد وأنشئه، وانتظر حتى يكتمل التوزيع.
 
-### <a name="create-a-conversational-language-understanding-app"></a>إنشاء تطبيق Conversational Language Understanding
+### إنشاء تطبيق Conversational Language Understanding
 
 لفهم اللغة الطبيعية باستخدام تطبيق Conversational Language Understanding، يمكنك إنشاء التطبيق، ثم إضافة الكيانات والأهداف والألفاظ لتحديد الأوامر التي تريد التطبيق.
 
@@ -61,7 +61,7 @@ lab:
 
 1. في الصفحة *Review and finish* انقر فوق **Create**.
 
-### <a name="create-intents-utterances-and-entities"></a>إنشاء المقاصد والأقوال والكيانات
+### إنشاء المقاصد والأقوال والكيانات
 
 يعد *الهدف* عبارة عن إجراء تريد تنفيذه، على سبيل المثال، قد ترغب في تشغيل مصباح أو إيقاف تشغيل مروحة. في هذه الحالة، ستحدد هدفين: أحدهما لتشغيل الجهاز والآخر لإيقاف تشغيل الجهاز. لكل قصد، عليك تحديد نماذج التعبيرات التي تشير إلى *الأقوال* المستخدمة للإشارة إلى تحقيق النية.
 
@@ -78,7 +78,7 @@ lab:
     - ***قم بتشغيل المروحة***
     - ***put the fan on***
     - ***تثبيت الضوء***
-    - ***switch on the light***
+    - ***أشعل الضوء***
     - ***turn the fan on***
 
 1. في جزء **Labeling entities for training** على الجانب الأيمن من الشاشة، حدد **Labels**، ثم حدد **Add entity**. اكتب **device** (بأحرف صغيرة)، وحدد **List** وحدد **Add entity**.
@@ -92,7 +92,7 @@ lab:
 
 1. افعل الشيء نفسه مع جميع الأقوال. ضع علامة على بقية *fan* أو العبارات *الخفيفة* باستخدام كيان **device**. عند الانتهاء، تحقق من أن لديك الألفاظ التالية وانقر فوق **Save changes**:
 
-    | **intent** | **utterance** | **الكيان** |
+    | **intent** | **utterance** | **كيان** |
     | --------------- | ------------------ | ------------------ |
     | switch_on   | وضع المروحة في حالة التشغيل      | الجهاز - *select fan* |
     | switch_on   | إشعال المصباح    | الجهاز - *select light* |
@@ -112,13 +112,13 @@ lab:
 1. أضف خمسة أمثلة لفظية أخرى إلى هدف **switch_off**.
     - ***إيقاف تشغيل المروحة***
     - ***إيقاف تشغيل المروحة***
-    - ***put the light off***
-    - ***turn off the light***
+    - ***قم بإطفاء المصباح***
+    - ***قم بإطفاء المصباح***
     - ***switch the fan off***
 
 1. ضع علامة على الكلمات *الخفيفة* أو *fan* باستخدام كيان **device**. عند الانتهاء، تحقق من أن لديك الألفاظ التالية وانقر فوق **Save changes**:  
 
-    | **intent** | **utterance** | **الكيان** | 
+    | **intent** | **utterance** | **كيان** | 
     | --------------- | ------------------ | ------------------ |
     | switch_off   | وضع المروحة في حالة إيقاف التشغيل    | الجهاز - *select fan* | 
     | switch_off   | إطفاء المصباح  | الجهاز - *select light* |
@@ -127,11 +127,11 @@ lab:
     | switch_off   | إيقاف تشغيل المروحة | الجهاز - *select fan* |
     | switch_off   | إيقاف إضاءة المصباح | الجهاز - *select light* |
 
-### <a name="train-the-model"></a>تدريب النموذج
+### التدريب على النموذج
 
 الآن أنت مستعد لاستخدام المقاصد والكيانات التي حددتها لتدريب نموذج لغة المحادثة لتطبيقك.
 
-1. على الجانب الأيسر من Language Studio، حدد **Training jobs**، ثم حدد **Start a training job**. استخدام الإعدادات التالية: 
+1. على الجانب الأيسر من Language Studio، حدد **Training jobs**، ثم حدد **Start a training job**. استخدم الإعدادات التالية: 
     - **Train a new model**: *Selected and choose a model name*
     - **وضع التدريب**: تدريب قياسي (مجاني)
     - **تقسيم البيانات**: *حدد تقسيم مجموعة الاختبارات تلقائياً من بيانات التدريب، واحتفظ بالنسب المئوية الافتراضية*
@@ -139,7 +139,7 @@ lab:
 
 1. انتظر حتى يكتمل التدريب. 
 
-### <a name="deploy-and-test-the-model"></a>نشر النموذج واختباره
+### نشر النموذج واختباره
 
 لاستخدام النموذج المدرَّب في تطبيق العميل، يجب عليك نشره كنقطة نهاية يمكن لتطبيقات العميل أن ترسل إليها ألفاظ جديدة؛ من خلالها سيتم توقع الأهداف والكيانات.
 
@@ -147,7 +147,7 @@ lab:
 
 1. حدد اسم نموذجك وانقر فوق **Add deployment**. استخدم الإعدادات التالية:
     - **Create or select an existing deployment name**: *حدد create a new deployment name. أضف اسم فريد*.
-    - **Assign trained model to your deployment name**:  *حدد اسم النموذج المدرب*.
+    - **Assign trained model to your deployment name**: * حدد اسم النموذج المدرب*.
     - انقر فوق **Deploy**
 
     >**تلميح** اكتب *اسم التوزيع*الخاص بك، الذي سوف تستخدمه لاحقًا. 
@@ -167,7 +167,7 @@ lab:
     - *تثبيت الضوء*
     - *إيقاف تشغيل المروحة*
 
-## <a name="run-cloud-shell"></a>تشغيل Cloud Shell
+## تشغيل Cloud Shell
 
 الآن دعنا نجرب نموذجك المُوزَّع. للقيام بذلك، سنستخدم تطبيق سطر أوامر يعمل في Cloud Shell في Azure. 
 
@@ -191,7 +191,7 @@ lab:
 
     ![انتظر حتى يبدأ PowerShell.](media/conversational-language-understanding/powershell-prompt.png) 
 
-## <a name="configure-and-run-a-client-application"></a>كوّن تطبيق عميل وقم بتشغيله
+## كوّن تطبيق عميل وقم بتشغيله
 
 لنفتح الآن برنامجاً نصياً مكتوباً مسبقاً ونعدله، سيقوم البرنامج النصي هذا بتشغيل تطبيق العميل.
 
@@ -203,7 +203,7 @@ lab:
 
     >**ملاحظة** إذا كنت قد استخدمت هذا الأمر بالفعل في نشاط معملي آخر لاستنساخ مستودع *ai-900*، فيمكنك تخطي هذه الخطوة.
 
-1. يتم تحميل الملفات إلى مجلد يسمى **ai-900** نريد الآن رؤية جميع الملفات الموجودة في هذا المجلد والعمل معها. اكتب الأوامر التالية في shell:
+1. يتم تحميل الملفات إلى مجلد يسمى **ai-900**. نريد الآن رؤية جميع الملفات الموجودة في هذا المجلد والعمل معها. اكتب الأوامر التالية في shell:
 
      ```PowerShell
     cd ai-900
@@ -257,6 +257,6 @@ lab:
 
 >**ملاحظة** في كل مرة ستحتاج إلى البدء بـ **./understand.ps1** متبوعًا بالعبارة. قم بتضمين علامات الاقتباس حول العبارة الخاصة بك.
 
-## <a name="learn-more"></a>معرفة المزيد
+## معرفة المزيد
 
 لا يعرض هذا التطبيق سوى بعض إمكانات ميزة Conversational Language Understanding في خدمة Language. لمعرفة المزيد حول ما يمكنك القيام به مع هذه الخدمة، راجع [صفحة Conversational Language Understanding](https://docs.microsoft.com/azure/cognitive-services/language-service/conversational-language-understanding/overview). 
